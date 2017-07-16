@@ -1,0 +1,545 @@
+<!--
+
+=============================================================================================
+|                                               **                            **            |
+|       ************                            **                            **            |
+|         **        **                                                        **            |
+|         **        **                      ******      ****  ****            **            |
+|         **        **      **  ****            **        ****    **      **********        |
+|         **        **        **    **          **        **      **          **            |
+|         **********          **                **        **      **          **            |
+|         **                  **                **        **      **          **            |
+|         **                  **                **        **      **          **            |
+|         **                  **                **        **      **          **   **       |
+|       ******                **                **        **      **            **          |
+=============================================================================================
+(~￣▽￣)~[JavaScript]
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="print">
+  <meta name="Keywords" content="标题">
+  <meta name="Description" content="描述">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+  <link href="img/index/head-icon.png" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="css/index.css">  <!-- 引入当页样式表 -->
+  <link rel="stylesheet" href="css/reset.css">  <!-- 样式初始化 -->
+  <link rel="stylesheet" type="text/css" href="icon/font/iconfont.css"> <!-- 引入图标 -->
+  <!--[if lt IE 9]>
+         <script src='js/html5shiv.js'></script>
+         <link rel="stylesheet" href="css/tipie.css">
+         <div class="ieTip" style=""><div class="content"><img src="img/index/IE8/qrCode.png" height="200" width="200"><a class="ie" href="http://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads?spm=875.7931836/B.a2226mw.1.10c849datHX1Bu" target="_blank"></a><a class="uc" href="http://www.uc.cn/" target="_blank"></a></div></div>
+  <![endif]-->
+  <title>天猫tmall.com--理想生活</title>
+ </head>
+ <body>
+    <!-- 头部导航条部分 -->
+    <header class="header-nav">
+        <nav>
+            <section class="section_left">
+                <p>喵，欢迎来天猫</p>
+                <div>
+                    <a href="https://login.tmall.com/?spm=875.7931836/B.a2226mz.1.10c849da1CTj6L&redirectURL=https%3A%2F%2Fwww.tmall.com%2F" target="_blank">
+                        请登录
+                    </a>
+                </div>
+                <div>
+                    <a href="https://register.tmall.com/?spm=875.7931836/B.a2226mz.2.10c849darV7rTB" target="_blank">
+                        免费注册
+                    </a>
+                </div>
+            </section>
+            <section class="section_right">
+                <div>
+                    <a class="taobao triangle" href="https://login.taobao.com/member/login.jhtml?from=taobaoindex&f=top&style=&sub=true&redirect_url=https%3A%2F%2Fi.taobao.com%2Fmy_taobao.htm%3Fspm%3D875.7931836%2FB.a2226mz.3.10c849dapiKr3q">
+                        我的淘宝
+                    </a>
+                    <div class="menu hide">
+                        <a href="https://trade.taobao.com/trade/itemlist/list_bought_items.htm?spm=875.7931836/B.a2226mz.4.10c849daejQ7lG&t=20110530">已买到的宝贝</a>
+                        <a href="https://trade.taobao.com/trade/itemlist/list_sold_items.htm?spm=875.7931836/B.a2226mz.5.10c849daejQ7lG&t=20110530">已卖出的宝贝</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="https://login.tmall.com/?redirectURL=http%3A%2F%2Fmybrand.tmall.com%2FbrandFeedList.htm%3Fspm%3D875.7931836%252FB.a2226mz.7.10c849daHeMzG8%26scm%3D1048.1.1.1">
+                        <i class="iconfont icon-xiai"></i>
+                        我关注的品牌
+                    </a>
+                </div>
+                <div>
+                    <a href="https://cart.tmall.com/cart/myCart.htm?spm=875.7931836/B.a2226mz.8.10c849dalxqHAW&from=btop">
+                        <i class="iconfont icon-gouwucheman"></i>
+                        购物车 <span>0</span> 件
+                    </a>
+                </div>
+                <div class="scj">
+                    <a class="shoucang triangle" href="https://shoucang.taobao.com/shop_collect_list.htm?spm=875.7931836/B.a2226mz.9.10c849daBIRzoa&scjjc=c1">
+                        收藏夹
+                    </a>
+                    <div class="menu hide">
+                        <a href="https://shoucang.taobao.com/item_collect.htm?spm=875.7931836/B.a2226mz.10.10c849daejQ7lG">收藏的宝贝</a>
+                        <a href="https://shoucang.taobao.com/shop_collect_list.htm?spm=875.7931836/B.a2226mz.11.10c849daejQ7lG">收藏的店铺</a>
+                    </div>
+                </div>
+                <div class="sjb">
+                    <a class="shouji" href="https://pages.tmall.com/wow/portal/act/app-download?spm=875.7931836/B.a2226mz.12.10c849daBIRzoa&scm=1027.1.1.1">
+                        <i class="iconfont icon-shouji"></i>
+                        手机版
+                    </a>
+                    <div class="contain">
+                        <p></p>
+                    </div>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com/?spm=875.7931836/B.a2226mz.13.10c849daBIRzoa" target="_blank">
+                        淘宝网
+                    </a>
+                </div>
+                <div>
+                    <a href="https://b.tmall.com/?spm=875.7931836/B.a2226mz.14.10c849daBIRzoa" target="_blank">
+                        企业购
+                    </a>
+                </div>
+                <div>
+                    <a class="shangjia triangle" href="https://mai.taobao.com/?spm=875.7931836/B.a2226mz.15.10c849daUxb5TM">
+                        商家支持
+                    </a>
+                    <div class="menu hide">
+                        <div class="container">
+                            <h2>商家：</h2>
+                            <div class="content">
+                                <a href="https://mai.taobao.com/?spm=875.7931836/B.a2226mz.16.10c849da6ykrzg">商家中心</a>
+                                <a href="https://zhaoshang.tmall.com/?spm=875.7931836/B.a2226mz.17.10c849da6ykrzg&acm=lb-tms-1104633-90536.1003.4.268545&scm=1003.4.lb-tms-1104633-90536.OTHER_2_268545">商家入驻</a>
+                                <a href="https://fw.tmall.com/?spm=875.7931836/B.a2226mz.18.10c849da6ykrzg&acm=lb-tms-1104633-90536.1003.4.268545&scm=1003.4.lb-tms-1104633-90536.OTHER_3_268545">运营服务</a>
+                                <a href="https://www.tmall.com/wow/seller/act/tmallpinkong?spm=875.7931836/B.a2226mz.19.10c849da6ykrzg">商家品控</a>
+                                <a href="https://fuwu.tmall.com/?spm=875.7931836/B.a2226mz.20.10c849da6ykrzg&acm=lb-tms-1104633-90536.1003.4.268545&scm=1003.4.lb-tms-1104633-90536.OTHER_5_268545">商家工具</a>
+                                <a href="https://guize.tmall.com/?spm=875.7931836/B.a2226mz.21.10c849da6ykrzg&acm=lb-tms-1104633-90536.1003.4.268545&scm=1003.4.lb-tms-1104633-90536.OTHER_6_268545">商家规则</a>
+                                <a href="https://zhiku.tmall.com/?spm=875.7931836/B.a2226mz.22.10c849da6ykrzg">天猫智库</a>
+                                <a href="https://maowo.tmall.com/?spm=875.7931836/B.a2226mz.23.10c849da6ykrzg&acm=lb-tms-1104633-90536.1003.4.268545&scm=1003.4.lb-tms-1104633-90536.OTHER_8_268545">喵言喵语</a>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <h2>帮助：</h2>
+                            <div class="content">
+                                <a href="https://helpcenter.tmall.com/index?spm=875.7931836/B.a2226mz.24.10c849da6ykrzg&from=high">帮助中心</a>
+                                <a href="https://infob.taobao.com/help?spm=875.7931836/B.a2226mz.25.10c849da6ykrzg">问商友</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a class="daohang triangle" href="javascript:;" target="_blank">
+                        <i class="iconfont icon-liebiao"></i>
+                        网站导航
+                    </a>
+                    <div class="menu">
+                        <ul class="content">
+                            <li>
+                                <h2>热点推荐 HOT</h2>
+                                <div>
+                                    <a href="https://chaoshi.tmall.com/?spm=875.7931836/B.a2228l4.1.10c849daUiWQUM&acm=lb-tms-1289015-81300.1003.4.247689&scm=1003.4.lb-tms-1289015-81300.OTHER_1_247689" target="_blank">天猫超市</a>
+                                </div>
+                                <div>
+                                    <a href="https://miao.tmall.com/?spm=875.7931836/B.a2228l4.2.10c849daUiWQUM&acm=lb-tms-1289015-81300.1003.4.247689&scm=1003.4.lb-tms-1289015-81300.OTHER_2_247689" target="_blank">喵鲜生</a>
+                                </div>
+                                <div>
+                                    <a href="https://new3c.tmall.com/?spm=875.7931836/B.a2228l4.3.10c849daUiWQUM&acm=lb-tms-1289015-81300.1003.4.247689&scm=1003.4.lb-tms-1289015-81300.OTHER_3_247689" class="new" target="_blank">科技新品</a>
+                                </div>
+                                <div>
+                                    <a href="https://www.tmall.com/wow/fushi/act/nvzhuangnew?spm=875.7931836/B.a2228l4.4.10c849daUiWQUM&acm=lb-tms-1289015-81300.1003.4.247689&scm=1003.4.lb-tms-1289015-81300.OTHER_4_247689" class="hot" target="_blank">女装新品</a>
+                                </div>
+                                <div>
+                                    <a href="https://ku.tmall.com/?spm=875.7931836/B.a2228l4.5.10c849daUiWQUM&acm=lb-tms-1289015-81300.1003.4.247689&scm=1003.4.lb-tms-1289015-81300.OTHER_5_247689" target="_blank">酷玩街</a>
+                                </div>
+                                <div>
+                                    <a href="https://www.tmall.com/wow/fushi/act/neiyinew?spm=875.7931836/B.a2228l4.6.10c849daUiWQUM&acm=lb-tms-1289015-81300.1003.4.247689&scm=1003.4.lb-tms-1289015-81300.OTHER_6_247689" class="hot" target="_blank">内衣新品</a>
+                                </div>
+                                <div>
+                                    <a href="https://mei.tmall.com/shiyong.htm?spm=875.7931836/B.a2228l4.7.10c849daUiWQUM&acm=lb-tms-1289015-81300.1003.4.247689&scm=1003.4.lb-tms-1289015-81300.OTHER_7_247689" target="_blank">试美妆</a>
+                                </div>
+                                <div>
+                                    <a href="https://www.tmall.com/wow/fushi/act/sportsnew?spm=875.7931836/B.a2228l4.8.10c849daUiWQUM&acm=lb-tms-1289015-81300.1003.4.247689&scm=1003.4.lb-tms-1289015-81300.OTHER_8_247689" target="_blank">运动新品</a>
+                                </div>
+                                <div>
+                                    <a href="https://www.tmall.com/wow/fushi/act/nanzhuangnew?spm=875.7931836/B.a2228l4.9.10c849daUiWQUM&acm=lb-tms-1289015-81300.1003.4.247689&scm=1003.4.lb-tms-1289015-81300.OTHER_9_247689" class="hot" target="_blank">时尚先生</a>
+                                </div>
+                                <div>
+                                    <a href="https://baby.tmall.com/?spm=875.7931836/B.a2228l4.10.10c849daUiWQUM&acm=lb-tms-1289015-81300.1003.4.247689&scm=1003.4.lb-tms-1289015-81300.OTHER_11_247689" target="_blank">精明妈咪</a>
+                                </div>
+                                <div>
+                                    <a href="https://chi.tmall.com/?spm=875.7931836/B.a2228l4.11.10c849daUiWQUM&acm=lb-tms-1289015-81300.1003.4.247689&scm=1003.4.lb-tms-1289015-81300.OTHER_12_247689" class="new" target="_blank">吃乐会</a>
+                                </div>
+                                <div>
+                                    <a href="https://b.tmall.com/?spm=875.7931836/B.a2228l4.12.10c849daUiWQUM&acm=lb-tms-1289015-81300.1003.4.247689&scm=1003.4.lb-tms-1289015-81300.OTHER_13_247689" target="_blank">企业采购</a>
+                                </div>
+                                <div>
+                                    <a href="https://vip.tmall.com/vip/index.htm?spm=875.7931836/B.a2228l4.13.10c849daUiWQUM&acm=lb-tms-1289015-81300.1003.4.247689&scm=1003.4.lb-tms-1289015-81300.OTHER_14_247689" target="_blank">会员积分</a>
+                                </div>
+                                <div>
+                                    <a href="https://www.tmall.hk/?spm=875.7931836/B.a2228l4.14.10c849daUiWQUM&acm=lb-tms-1289015-81300.1003.4.247689&scm=1003.4.lb-tms-1289015-81300.OTHER_15_247689" target="_blank">天猫国际</a>
+                                </div>
+                            </li>
+                            <li class="market">
+                                <h2>行业市场 Market</h2>
+                                <div>
+                                    <a href="https://mei.tmall.com/?spm=875.7931836/B.a2228l4.15.10c849daUiWQUM" target="_blank">美妆</a>
+                                </div>
+                                <div>
+                                    <a href="https://3c.tmall.com/?spm=875.7931836/B.a2228l4.16.10c849daUiWQUM" target="_blank">电器</a>
+                                </div>
+                                <div>
+                                    <a href="https://nvzhuang.tmall.com/?spm=875.7931836/B.a2228l4.17.10c849daUiWQUM" class="hot" target="_blank">女装</a>
+                                </div>
+                                <div>
+                                    <a href="https://nanzhuang.tmall.com/?spm=875.7931836/B.a2228l4.18.10c849daUiWQUM" class="hot" target="_blank">男装</a>
+                                </div>
+                                <div>
+                                    <a href="https://nvxie.tmall.com/?spm=875.7931836/B.a2228l4.19.10c849daUiWQUM" target="_blank">女鞋</a>
+                                </div>
+                                <div>
+                                    <a href="https://nanxie.tmall.com/?spm=875.7931836/B.a2228l4.20.10c849daUiWQUM" target="_blank">男鞋</a>
+                                </div>
+                                <div>
+                                    <a href="https://neiyi.tmall.com/?spm=875.7931836/B.a2228l4.21.10c849daUiWQUM" class="hot" target="_blank">内衣</a>
+                                </div>
+                                <div>
+                                    <a href="https://bag.tmall.com/?spm=875.7931836/B.a2228l4.22.10c849daUiWQUM" target="_blank">箱包</a>
+                                </div>
+                                <div>
+                                    <a href="https://sports.tmall.com/?spm=875.7931836/B.a2228l4.23.10c849daUiWQUM" target="_blank">运动</a>
+                                </div>
+                                <div>
+                                    <a href="https://baby.tmall.com/?spm=875.7931836/B.a2228l4.24.10c849daUiWQUM" target="_blank">母婴</a>
+                                </div>
+                                <div>
+                                    <a href="https://jia.tmall.com/?spm=875.7931836/B.a2228l4.25.10c849daUiWQUM" target="_blank">家装</a>
+                                </div>
+                                <div>
+                                    <a href="https://yao.tmall.com/?spm=875.7931836/B.a2228l4.26.10c849daUiWQUM" target="_blank">医药</a>
+                                </div>
+                                <div>
+                                    <a href="https://food.tmall.com/?spm=875.7931836/B.a2228l4.27.10c849daUiWQUM" target="_blank">食品</a>
+                                </div>
+                                <div>
+                                    <a href="https://dai.tmall.com/?spm=875.7931836/B.a2228l4.28.10c849daUiWQUM" class="new" target="_blank">配饰</a>
+                                </div>
+                                <div>
+                                    <a href="https://car.tmall.com/?spm=875.7931836/B.a2228l4.29.10c849daUiWQUM" target="_blank">汽车</a>
+                                </div>
+                            </li>
+                            <li class="brand">
+                                <h2>品牌风尚 Brand</h2>
+                                <div>
+                                    <a href="https://www.tmall.com/wow/brand/act/fashion?spm=875.7931836/B.a2228l4.30.10c849daUiWQUM" target="_blank">尚天猫</a>
+                                </div>
+                                <div>
+                                    <a href="https://brand.tmall.com/first.html?spm=875.7931836/B.a2228l4.31.10c849daUiWQUM" target="_blank">大牌街</a>
+                                </div>
+                                <div>
+                                    <a href="https://brand.tmall.com/second.htm?spm=875.7931836/B.a2228l4.32.10c849daUiWQUM" target="_blank">潮牌街</a>
+                                </div>
+                                <div>
+                                    <a href="https://brand.tmall.com/yuanChuang.htm?spm=875.7931836/B.a2228l4.33.10c849daUiWQUM" target="_blank">天猫原创</a>
+                                </div>
+                                <div>
+                                    <a href="https://www.tmall.com/wow/brand/act/goodbrand?spm=875.7931836/B.a2228l4.34.10c849daUiWQUM" target="_blank">什么牌子好</a>
+                                </div>
+                            </li>
+                            <li class="help">
+                                <h2>服务指南 Help</h2>
+                                <div>
+                                    <a href="https://service.tmall.com/support/tmall/tmallHelp.htm?spm=875.7931836/B.a2228l4.35.10c849daUiWQUM&acm=lb-tms-1289015-81320.1003.4.247717&scm=1003.4.lb-tms-1289015-81320.OTHER_1_247717" target="_blank">帮助中心</a>
+                                </div>
+                                <div>
+                                    <a href="https://www.tmall.com/wow/seller/act/pinkong?spm=875.7931836/B.a2228l4.36.10c849daUiWQUM" target="_blank">品质保障</a>
+                                </div>
+                                <div>
+                                    <a href="https://www.tmall.com/wow/seller/act/special-service?spm=875.7931836/B.a2228l4.37.10c849daUiWQUM" target="_blank">特色服务</a>
+                                </div>
+                                <div>
+                                    <a href="https://www.tmall.com/wow/seller/act/seven-day?spm=875.7931836/B.a2228l4.38.10c849daUiWQUM" target="_blank">7天退换货</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <!-- 主体部分 -->
+    <div class="main">
+        <!-- 主体头部 -->
+        <header class="main-header">
+            <!-- logo -->
+            <div class="logo">
+                <img src="img/index/logo.png" height="260" width="480">
+            </div>
+            <!-- 搜索部分 -->
+            <div class="search">
+                <input type="text" placeholder="全球美食精选">
+                <div class="submit">搜索</div>
+                <ul class="search-list clearfix">
+                    <li class="hot first">
+                        <a href="https://list.tmall.com/search_product.htm?spm=875.7931836/B.a1z5h.1.10c849daUxb5TM&from=mallfp..pc_1.0_hq&click_id=t%E6%81%A4%E7%94%B7&q=t%E6%81%A4%E7%94%B7" target="_blank">t恤男</a>
+                    </li>
+                    <li>
+                        <a href="https://list.tmall.com/search_product.htm?spm=875.7931836/B.a1z5h.2.10c849daUxb5TM&from=mallfp..pc_1.1_hq&click_id=%E8%BF%9E%E8%A1%A3%E8%A3%99&q=%E8%BF%9E%E8%A1%A3%E8%A3%99" target="_blank">连衣裙</a>
+                    </li>
+                    <li>
+                        <a href="https://list.tmall.com/search_product.htm?spm=875.7931836/B.a1z5h.3.10c849daUxb5TM&from=mallfp..pc_1.2_hq&click_id=%E5%A4%8F%E5%87%89%E8%A2%AB&q=%E5%A4%8F%E5%87%89%E8%A2%AB" target="_blank">夏凉被</a>
+                    </li>
+                    <li class="hot">
+                        <a href="https://list.tmall.com/search_product.htm?spm=875.7931836/B.a1z5h.4.10c849daUxb5TM&from=mallfp..pc_1.3_hq&click_id=%E7%94%B5%E5%8A%A8%E7%89%99%E5%88%B7&q=%E7%94%B5%E5%8A%A8%E7%89%99%E5%88%B7" target="_blank">电动牙刷</a>
+                    </li>
+                    <li>
+                        <a href="https://list.tmall.com/search_product.htm?spm=875.7931836/B.a1z5h.5.10c849daUxb5TM&from=mallfp..pc_1.4_hq&click_id=%E9%BA%BB%E5%B0%86%E7%81%AF&q=%E9%BA%BB%E5%B0%86%E7%81%AF" target="_blank">麻将灯</a>
+                    </li>
+                    <li>
+                        <a href="https://list.tmall.com/search_product.htm?spm=875.7931836/B.a1z5h.6.10c849daUxb5TM&from=mallfp..pc_1.5_hq&click_id=%E9%98%B2%E6%99%92%E8%A1%A3&q=%E9%98%B2%E6%99%92%E8%A1%A3" target="_blank">防晒衣</a>
+                    </li>
+                    <li class="hot">
+                        <a href="https://list.tmall.com/search_product.htm?spm=875.7931836/B.a1z5h.7.10c849daUxb5TM&from=mallfp..pc_1.6_hq&click_id=%E5%87%89%E9%9E%8B&q=%E5%87%89%E9%9E%8B" target="_blank">凉鞋</a>
+                    </li>
+                    <li>
+                        <a href="https://list.tmall.com/search_product.htm?spm=875.7931836/B.a1z5h.8.10c849daUxb5TM&from=mallfp..pc_1.7_hq&click_id=%E5%8F%8C%E8%82%A9%E5%8C%85&q=%E5%8F%8C%E8%82%A9%E5%8C%85" target="_blank">双肩包</a>
+                    </li>
+                    <li class="hot">
+                        <a href="https://list.tmall.com/search_product.htm?spm=875.7931836/B.a1z5h.9.10c849daUxb5TM&from=mallfp..pc_1.8_hq&click_id=%E5%8F%A3%E7%BA%A2&q=%E5%8F%A3%E7%BA%A2" target="_blank">口红</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- Banner部分 -->
+        <section class="Banner">
+            <div class="top">
+                <ul class="top-list clearfix">
+                    <li class="shopList">
+                        <i class="iconfont icon-liebiao"></i>
+                        <h2>商品分类</h2>
+                    </li>
+                    <li class="supermarket">
+                        <a href="https://chaoshi.tmall.com/?spm=875.7931836/B.2016004.1.10c849daUxb5TM&acm=lb-zebra-148799-667861.1003.4.1266918&scm=1003.4.lb-zebra-148799-667861.OTHER_14561837688591_1266918" target="_blank">
+                            <img src="img/index/tmall_chaoshi.png" height="72" width="180">
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                    <li class="inter">
+                        <a href="https://www.tmall.hk/?spm=875.7931836/B.2016004.2.10c849daUxb5TM&acm=lb-zebra-148799-667861.1003.4.1266918&scm=1003.4.lb-zebra-148799-667861.OTHER_14561833841102_1266918" target="_blank">
+                            <img src="img/index/tmall_guoji.png" height="72" width="180">
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://vip.tmall.com/vip/index.htm?spm=875.7931836/B.2016004.3.10c849daUxb5TM&acm=lb-zebra-148799-667861.1003.4.1266918&scm=1003.4.lb-zebra-148799-667861.OTHER_14561845383563_1266918" target="_blank">
+                            天猫会员
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tmall.com/wow/brand/act/fashion?spm=875.7931836/B.2016004.4.10c849daUxb5TM&acm=lb-zebra-148799-667861.1003.4.1266918&scm=1003.4.lb-zebra-148799-667861.OTHER_14561841536074_1266918" target="_blank">
+                            品牌街
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://3c.tmall.com/?spm=875.7931836/B.2016004.5.10c849daUxb5TM&acm=lb-zebra-148799-667861.1003.4.1266918&scm=1003.4.lb-zebra-148799-667861.OTHER_14561822298635_1266918" target="_blank">
+                            电器城
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://miao.tmall.com/?spm=875.7931836/B.2016004.6.10c849daUxb5TM&acm=lb-zebra-148799-667861.1003.4.1266918&scm=1003.4.lb-zebra-148799-667861.OTHER_14561818451146_1266918" target="_blank">
+                            喵鲜生
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://yao.tmall.com/?spm=875.7931836/B.2016004.7.10c849daUxb5TM&acm=lb-zebra-148799-667861.1003.4.1266918&scm=1003.4.lb-zebra-148799-667861.OTHER_14561829993617_1266918" target="_blank">
+                            医药馆
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wt.tmall.com/?spm=875.7931836/B.2016004.8.10c849daUxb5TM&acm=lb-zebra-148799-667861.1003.4.1266918&scm=1003.4.lb-zebra-148799-667861.OTHER_14561826146128_1266918" target="_blank">
+                            营业厅
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://meilihui.tmall.com/?spm=875.7931836/B.2016004.9.10c849daUxb5TM&acm=lb-zebra-148799-667861.1003.4.1266918&scm=1003.4.lb-zebra-148799-667861.OTHER_14561806908679_1266918" target="_blank">
+                            魅力惠
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.alitrip.com/?spm=875.7931836/B.2016004.10.10c849daUxb5TM&acm=lb-zebra-148799-667861.1003.4.1266918&scm=1003.4.lb-zebra-148799-667861.OTHER_145618030611810_1266918" target="_blank">
+                            飞猪旅行
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://suning.tmall.com/?spm=875.7931836/B.2016004.11.10c849daUxb5TM&acm=lb-zebra-148799-667861.1003.4.1266918&scm=1003.4.lb-zebra-148799-667861.OTHER_11_1266918" target="_blank">
+                            苏宁易购
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <!-- 轮播部分 -->
+                <div class="banner">
+                    <ul>
+                        <li class="banner1 show" style="background-color:#e8e8e8;">
+                            <a href="https://pages.tmall.com/wow/act/17798/kuangshu?spm=875.7931836/B.2016006.d1.10c849daUxb5TM&pos=1&acm=07055-1.1003.2.1951130&scm=1003.2.07055-1.OTHER_1501756349781_1951130" target="_blank">
+                                <img src="img/index/banner1.jpg" width="1180" height="500" alt="">
+                            </a>
+                        </li>
+                        <li class="banner2" style="background-color:#f9f3f3;">
+                            <a href="https://click.mz.simba.taobao.com/ecpm?spm=875.7931836/B.2016006.d2.10c849daUxb5TM&e=t0fJXgXtb7EDVygn71umRYhyJHncgPCv23dTVtQYRFHR3G6K46HokE6uIqgD5hsMESo23xCCn6%2BuwE8y5JmUE%2BWQYwa8Fyg5UK7RDtIZydUyXElRAMLwowmkrm66DkgdCN%2B88G0zL7w%2BU4mRK8WX8Cj1AkTVc0xIJTmYYnpo8kMeHDwqyw%2B6f8VdmapbHOqZZtZEj%2BGfjfAOJ8BGS%2FzzXmstZc7pa6fgaf44Wfm3QnVFBLFHLEf1KFNAf4Uy086tqpqtvE5BYkZuII5x4rR1V7dIep6b7r8CEboYhmR1FsvCLuFuOYubN7NSq%2BpqRClEL3sEKRw13Wrhn%2Fv5agkJjndM7nnuaKOoCUyOw96ru%2BTcnCYAJbrm5YNDhgLEZlKkK8HsWxYxuRL2MfQ1ismueU6DO5rNNz%2BU&u=https%3A%2F%2Fbydqiche.tmall.com&k=417" target="_blank">
+                                <img src="img/index/banner2.jpg" width="1130" height="500" alt="">
+                            </a>
+                        </li>
+                        <li class="banner3" style="background-color:#e8e8e8;">
+                            <a href="https://chaoshi.tmall.com/activity/hubV2.do?spm=875.7931836/B.2016006.d3.10c849daUxb5TM&activityKey=cb8b84318185579b22e398af7f2cefea&pos=1&acm=201602266.1003.1.981201&scm=1003.1.201602266.THJH_126989-C1S1_981201" target="_blank">
+                                <img src="img/index/banner3.jpg" width="1180" height="500" alt="">
+                            </a>
+                        </li>
+                        <li class="banner4" style="background-color:#84cef1;">
+                            <a href="https://click.mz.simba.taobao.com/ecpm?spm=875.7931836/B.2016006.d4.10c849daUxb5TM&e=2%2Fbz7yF39fMDVygn71umRYhyJHncgPCv2x6IktBaUEvSQUt8%2BiDV1nQalP9xOwgbaD%2F5Loly2tdKxObJ3N6DMUV4oBhnjQMwUK7RDtIZydUyXElRAMLwowmkrm66Dkgd1W5Gp68JB7HpTtLiOyYYWylwQV0OwXvgGAar9B9XvDE3p9sQ0%2FQiQx1npnYcZ4Sz9G7062ZwtR7dW84tPOjz2W01B%2BK%2FHfgJRopAwLS5DZb1nw%2B0xLybwPPoK%2FkqpuKWEY1eV4pTmZxGE1S7Cv2viBRclptaOGZmxVfSkx3q%2FrE1Ky1jAshUISM4%2F%2FFfNE5TjyUqixZdsazhEGbndk31E7Zi%2BSs8qlzuCSnZS2rGSPgnfiJx2dTMG8tkGj%2BkpRm4RQbykvIritFqHG34OX%2Bn4egtfxfmTqhJ&u=https%3A%2F%2Fdetail.tmall.com%2Fitem.htm%3Fid%3D524039076628%26sku_properties%3D5919063%3A6536025%26scene%3Dtaobao_shop&k=417" target="_blank">
+                                <img src="img/index/banner4.jpg" width="1130" height="500" alt="">
+                            </a>
+                        </li>
+                        <li class="banner5" style="background-color:#ff62b7;">
+                            <a href="https://pages.tmall.com/wow/act/17798/coolplay?spm=875.7931836/B.2016006.d5.10c849daUxb5TM&trackInfo=20160815100101;8666951472;88888;552388999987;3;88888_552388999987;1007.14152.68669.100200300000000;257a72b2-cae0-4240-8ccf-baac97e02e80;1;0;10000002&item_id=552388999987&pvid=257a72b2-cae0-4240-8ccf-baac97e02e80&pos=2&activity_id=88888&acm=07055.1003.1.1192426&scm=1003.1.20160815.OTHER_0_1957029" target="_blank">
+                                <img src="img/index/banner5.jpg" width="1130" height="500" alt="">
+                            </a>
+                        </li>
+                        <li class="banner6" style="background-color:#2ab9ff;">
+                            <a href="https://pages.tmall.com/wow/act/17106/0311?spm=875.7931836/B.2016006.d6.10c849daUxb5TM&trackInfo=20160815100101;8661196342;88853;549101601416;3;88853_549101601416;1007.14152.68669.100200300000000;257a72b2-cae0-4240-8ccf-baac97e02e80;2;0;10000002&item_id=549101601416&pvid=257a72b2-cae0-4240-8ccf-baac97e02e80&pos=3&activity_id=88853&acm=07055.1003.1.1192426&scm=1003.1.20160815.OTHER_0_1956895" target="_blank">
+                                <img src="img/index/banner6.jpg" width="1130" height="500" alt="">
+                            </a>
+                            <a href="https://pages.tmall.com/wow/act/15879/phonebazaareins?spm=875.7931836/B.2016006.2.10c849daUxb5TM&trackInfo=20160815100201;8631646362;88754;535766203755;3;88754_535766203755;1007.14152.68669.100200300000000;257a72b2-cae0-4240-8ccf-baac97e02e80;1;0;10000002&item_id=535766203755&pvid=257a72b2-cae0-4240-8ccf-baac97e02e80&pos=5&activity_id=88754&acm=07055.1003.1.1192426&scm=1003.1.20160815.OTHER_0_1956240" class="show show1" target="_blank">
+                                <img src="img/index/banner6_show1.png" height="256" width="240" alt="">
+                            </a>
+                            <a href="https://pages.tmall.com/wow/tmsx/act/xialingshi?spm=875.7931836/B.2016006.3.10c849daUxb5TM&wh_weex=true&trackInfo=20160815100201;8063640012;83213;542125663531;3;83213_542125663531;1007.14152.68669.100200300000000;257a72b2-cae0-4240-8ccf-baac97e02e80;2;0;10000002&item_id=542125663531&pvid=257a72b2-cae0-4240-8ccf-baac97e02e80&pos=6&activity_id=83213&acm=07055.1003.1.1192426&scm=1003.1.20160815.OTHER_0_1953537" class="show show2" target="_blank">
+                                <img src="img/index/banner6_show2.png" height="256" width="240" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tabList">
+                        <i class="cur"></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                </div>
+                <!-- 商品分类列表 -->
+                <div class="wrap">
+                    <ul class="showList">
+                        <li>
+                            <i class="iconfont icon-nvzhuangneiyi"></i>
+                            <a href="https://nvzhuang.tmall.com/?spm=875.7931836/B.category2016010.1.10c849daUxb5TM&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561681423980_708026" target="_blank">女装</a> /
+                            <a href="https://neiyi.tmall.com/?spm=875.7931836/B.category2016010.2.10c849daUxb5TM&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561681423980_708026" target="_blank">内衣</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-nanzhuang"></i>
+                            <a href="https://nanzhuang.tmall.com/?spm=875.7931836/B.category2016011.1.10c849daUxb5TM&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561677576501_708026" target="_blank">男装</a> /
+                            <a href="https://sports.tmall.com/?spm=875.7931836/B.category2016011.2.10c849daUxb5TM&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561677576501_708026" target="_blank">运动户外</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-xie"></i>
+                            <a href="https://nvxie.tmall.com/?spm=875.7931836/B.category2016012.1.10c849daUxb5TM&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561689118972_708026" target="_blank">女鞋</a> /
+                            <a href="https://nanxie.tmall.com/?spm=875.7931836/B.category2016012.2.10c849daUxb5TM&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561689118972_708026" target="_blank">男鞋</a> /
+                            <a href="https://bag.tmall.com/?spm=875.7931836/B.category2016012.3.10c849daUxb5TM&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561689118972_708026" target="_blank">箱包</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-huazhuangpin"></i>
+                            <a href="https://list.tmall.com/search_product.htm?spm=875.7931836/B.category2016013.1.10c849daUxb5TM&q=%B9%D9%B7%BD%D6%B1%CA%DB&vmarket=29890&style=w&theme=275&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561685271493_708026&smAreaId=330100" target="_blank">化妆品</a> /
+                            <a href="https://list.tmall.com/search_product.htm?spm=875.7931836/B.category2016013.2.10c849daUxb5TM&q=%B9%D9%B7%BD%D6%B1%CA%DB&vmarket=29890&style=w&theme=275&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561685271493_708026&smAreaId=330100" target="_blank">个人护理</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-zhubaoshipin"></i>
+                            <a href="https://watch.tmall.com/?spm=875.7931836/B.category2016014.1.10c849daUxb5TM&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561666034064_708026" target="_blank">腕表</a> /
+                            <a href="https://dai.tmall.com/?spm=875.7931836/B.category2016014.2.10c849daUxb5TM&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561666034064_708026" target="_blank">珠宝饰品</a> /
+                            <a href="https://list.tmall.com/search_product.htm?spm=875.7931836/B.category2016014.3.10c849daUxb5TM&abbucket=&active=1&acm=lb-zebra-148799-667863.1003.4.708026&sort=s&abtest=&pos=3&cat=50023064&theme=469&from=sn_1_rightnav&style=g&search_condition=7&scm=1003.4.lb-zebra-148799-667863.OTHER_14561666034064_708026&aldid=75994#J_crumbs" target="_blank">眼睛</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-shumashouji"></i>
+                            <a href="https://shouji.tmall.com/?spm=875.7931836/B.category2016015.1.10c849daUxb5TM&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561662186585_708026" target="_blank">手机</a> /
+                            <a href="https://3c.tmall.com/?spm=875.7931836/B.category2016015.2.10c849daUxb5TM&go=act&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561662186585_708026" target="_blank">数码</a> /
+                            <a href="https://3c.tmall.com/?spm=875.7931836/B.category2016015.3.10c849daUxb5TM&go=digt&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561662186585_708026" target="_blank">电脑办公</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-muyingwanju"></i>
+                            <a href="https://baby.tmall.com/?spm=875.7931836/B.category2016016.1.10c849daUxb5TM&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561673729066_708026" target="_blank">母婴玩具</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-shipin"></i>
+                            <a href="https://food.tmall.com/?spm=875.7931836/B.category2016017.1.10c849daUxb5TM&abtest=&abbucket=&pos=1&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561669881597_708026&aldid=75999" target="_blank">食品</a> /
+                            <a href="https://food.tmall.com/?spm=875.7931836/B.category2016017.2.10c849daUxb5TM&abtest=&abbucket=&pos=2&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561669881597_708026&aldid=75999#J_MuiLiftPannel1" target="_blank">进口零食</a> /
+                            <a href="https://food.tmall.com/?spm=875.7931836/B.category2016017.3.10c849daUxb5TM&abtest=&abbucket=&pos=3&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561669881597_708026&aldid=75999#J_MuiLiftPannel4" target="_blank">茶酒</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-shengxianshuiguo"></i>
+                            <a href="https://miao.tmall.com/?spm=875.7931836/B.category2016018.1.10c849daUxb5TM&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14593834779268_708026" target="_blank">生鲜水果</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-jiayongdianqi"></i>
+                            <a href="https://3c.tmall.com/?spm=875.7931836/B.category2016019.1.10c849daUxb5TM&go=appl&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561650644158_708026" target="_blank">大家电</a> /
+                            <a href="https://3c.tmall.com/?spm=875.7931836/B.category2016019.2.10c849daUxb5TM&go=kich&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561650644158_708026" target="_blank">生活电器</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-jiajujiancai"></i>
+                            <a href="https://jia.tmall.com/?spm=875.7931836/B.category2016020.1.10c849daUxb5TM&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_14561646796679_708026" target="_blank">家具建材</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-qichepeijian"></i>
+                            <a href="https://car.tmall.com/?spm=875.7931836/B.category2016021.1.10c849daUxb5TM&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_145616583391510_708026" target="_blank">汽车</a> /
+                            <a href="https://list.tmall.com/search_product.htm?spm=875.7931836/B.category2016021.2.10c849daUxb5TM&abbucket=&active=1&acm=lb-zebra-148799-667863.1003.4.708026&industryCatId=50660004&uuid=75987&abtest=&pos=11&cat=56772006&style=g&from=sn_1_rightnav&search_condition=55&scm=1003.4.lb-zebra-148799-667863.OTHER_145616583391510_708026&aldid=431510#J_crumbs" target="_blank">配件</a> /
+                            <a href="https://list.tmall.com/search_product.htm?spm=875.7931836/B.category2016021.3.10c849daUxb5TM&abbucket=&active=1&acm=lb-zebra-148799-667863.1003.4.708026&industryCatId=50660004&uuid=75987&abtest=&pos=11&cat=56838011&style=g&from=sn_1_rightnav&search_condition=55&scm=1003.4.lb-zebra-148799-667863.OTHER_145616583391510_708026&aldid=431510#J_crumbs" target="_blank">用品</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-jiafangjiashi"></i>
+                            <a href="https://myhome.tmall.com/?spm=875.7931836/B.category2016022.1.10c849daUxb5TM&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_145616544916711_708026" target="_blank">家纺</a> /
+                            <a href="https://myhome.tmall.com/?spm=875.7931836/B.category2016022.2.10c849daUxb5TM&abtest=&act=4,2&abbucket=&pos=2&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_145616544916711_708026&aldid=74660" target="_blank">家饰</a> /
+                            <a href="https://list.tmall.com/search_product.htm?spm=875.7931836/B.category2016022.3.10c849daUxb5TM&cat=50024897&style=g&from=sn_1_rightnav&acm=lb-zebra-148799-667863.1003.4.708026&sort=s&search_condition=7&scm=1003.4.lb-zebra-148799-667863.OTHER_145616544916711_708026&industryCatId=50024897&smAreaId=330100#J_crumbs" target="_blank">鲜花</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-yiyaobaojian"></i>
+                            <a href="https://yao.tmall.com/?spm=875.7931836/B.category2016023.1.10c849daUxb5TM&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_145616352542412_708026" target="_blank">医药保健</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-jujia"></i>
+                            <a href="https://list.tmall.com/search_product.htm?spm=875.7931836/B.category2016024.1.10c849daUxb5TM&cat=50036640&active=1&style=g&from=sn_1_rightnav&acm=lb-zebra-148799-667863.1003.4.708026&sort=s&search_condition=23&tmhkmain=0&scm=1003.4.lb-zebra-148799-667863.OTHER_145616314067613_708026&industryCatId=50036640&smAreaId=330100#J_crumbs" target="_blank">厨具</a> /
+                            <a href="https://list.tmall.com/search_product.htm?spm=875.7931836/B.category2016024.2.10c849daUxb5TM&abbucket=&active=1&acm=lb-zebra-148799-667863.1003.4.708026&sort=s&industryCatId=50071816&abtest=&pos=2&cat=50071786&from=sn_1_rightnav&style=g&search_condition=7&scm=1003.4.lb-zebra-148799-667863.OTHER_145616314067613_708026&aldid=75975#J_crumbs" target="_blank">收纳</a> /
+                            <a href="https://list.tmall.com/search_product.htm?spm=875.7931836/B.category2016024.3.10c849daUxb5TM&abbucket=&active=1&acm=lb-zebra-148799-667863.1003.4.708026&sort=s&industryCatId=50043495&uuid=92196&abtest=&pos=3&cat=50034368&from=sn_1_rightnav&style=g&search_condition=7&scm=1003.4.lb-zebra-148799-667863.OTHER_145616314067613_708026&aldid=75975#J_crumbs" target="_blank">宠物</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-tushuyinxiang"></i>
+                            <a href="https://book.tmall.com/?spm=875.7931836/B.category2016025.1.10c849daUxb5TM&acm=lb-zebra-148799-667863.1003.4.708026&scm=1003.4.lb-zebra-148799-667863.OTHER_145616429492414_708026" target="_blank">图书音像</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- 活动部分 -->
+        <section class="activity">
+
+        </section>
+    </div>
+    <script src="js/DetectionZoom.js"></script>
+    <script src="js/jquery.1.12.4.min.js"></script>
+    <script src="js/index.js"></script> <!-- 引入当前页面JS -->
+ </body>
+</html>
+
+
+<!--
+
+
+ -->

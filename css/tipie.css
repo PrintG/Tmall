@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.ieTip{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9999999999999999999999999999;
+    width:100%;
+    height:100%;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF000000,endColorstr=#BF000000);
+}
+.ieTip .content{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    width:990px;
+    height:658px;
+    margin:auto;
+    background:url('../img/index/IE8/Tip_bg.png') no-repeat;
+}
+.ieTip .content img{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-44px;
+    margin-left:-27px;
+    width:100px;
+    height:100px;
+}
+.ieTip .content a{
+    position:absolute;
+    top:425px;
+    height:20px;
+}
+.ieTip .content .ie{
+    width:128px;
+    left:335px;
+}
+.ieTip .content .uc{
+    width:82px;
+    left:475px;
+}
