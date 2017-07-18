@@ -500,89 +500,89 @@
     padding-left:14px;
     line-height:31px;
 }
-.main .Banner .content .wrap .showList li:hover{
+.main .Banner .content .wrap .showList li.active{
     background:#fff;
 }
-.main .Banner .content .wrap .showList li:hover a{
+.main .Banner .content .wrap .showList li.active a{
     font-weight:bold;
 }
     /* 每行Hover时的字体颜色 */
-.main .Banner .content .wrap .showList li:nth-child(1):hover a,
+.main .Banner .content .wrap .showList li.active:nth-child(1) a,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(1) .secondaryMenu-container>div .secondaryMenu-container-list a:hover,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(1) .secondaryMenu-container>div .secondaryMenu-container-list a.hot{
     color:#e85687;
 }
-.main .Banner .content .wrap .showList li:nth-child(2):hover a,
+.main .Banner .content .wrap .showList li.active:nth-child(2) a,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(2) .secondaryMenu-container>div .secondaryMenu-container-list a:hover,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(2) .secondaryMenu-container>div .secondaryMenu-container-list a.hot{
     color:#588cf0;
 }
-.main .Banner .content .wrap .showList li:nth-child(3):hover a,
+.main .Banner .content .wrap .showList li.active:nth-child(3) a,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(3) .secondaryMenu-container>div .secondaryMenu-container-list a:hover,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(3) .secondaryMenu-container>div .secondaryMenu-container-list a.hot{
     color:#6f55ee;
 }
-.main .Banner .content .wrap .showList li:nth-child(4):hover a,
+.main .Banner .content .wrap .showList li.active:nth-child(4) a,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(4) .secondaryMenu-container>div .secondaryMenu-container-list a:hover,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(4) .secondaryMenu-container>div .secondaryMenu-container-list a.hot{
     color:#e54077;
 }
-.main .Banner .content .wrap .showList li:nth-child(5):hover a,
+.main .Banner .content .wrap .showList li.active:nth-child(5) a,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(5) .secondaryMenu-container>div .secondaryMenu-container-list a:hover,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(5) .secondaryMenu-container>div .secondaryMenu-container-list a.hot{
     color:#6347ed;
 }
-.main .Banner .content .wrap .showList li:nth-child(6):hover a,
+.main .Banner .content .wrap .showList li.active:nth-child(6) a,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(6) .secondaryMenu-container>div .secondaryMenu-container-list a:hover,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(6) .secondaryMenu-container>div .secondaryMenu-container-list a.hot{
     color:#5087f0;
 }
-.main .Banner .content .wrap .showList li:nth-child(7):hover a,
+.main .Banner .content .wrap .showList li.active:nth-child(7) a,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(7) .secondaryMenu-container>div .secondaryMenu-container-list a:hover,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(7) .secondaryMenu-container>div .secondaryMenu-container-list a.hot{
     color:#fa5c5c;
 }
-.main .Banner .content .wrap .showList li:nth-child(8):hover a,
+.main .Banner .content .wrap .showList li.active:nth-child(8) a,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(8) .secondaryMenu-container>div .secondaryMenu-container-list a:hover,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(8) .secondaryMenu-container>div .secondaryMenu-container-list a.hot{
     color:#f7ae40;
 }
-.main .Banner .content .wrap .showList li:nth-child(9):hover a,
+.main .Banner .content .wrap .showList li.active:nth-child(9) a,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(9) .secondaryMenu-container>div .secondaryMenu-container-list a:hover,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(9) .secondaryMenu-container>div .secondaryMenu-container-list a.hot{
     color:#f7ab38;
 }
-.main .Banner .content .wrap .showList li:nth-child(10):hover a,
+.main .Banner .content .wrap .showList li.active:nth-child(10) a,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(10) .secondaryMenu-container>div .secondaryMenu-container-list a:hover,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(10) .secondaryMenu-container>div .secondaryMenu-container-list a.hot{
     color:#6b92fb;
 }
-.main .Banner .content .wrap .showList li:nth-child(11):hover a,
+.main .Banner .content .wrap .showList li.active:nth-child(11) a,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(11) .secondaryMenu-container>div .secondaryMenu-container-list a:hover,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(11) .secondaryMenu-container>div .secondaryMenu-container-list a.hot{
     color:#E14343;
 }
-.main .Banner .content .wrap .showList li:nth-child(12):hover a,
+.main .Banner .content .wrap .showList li.active:nth-child(12) a,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(12) .secondaryMenu-container>div .secondaryMenu-container-list a:hover,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(12) .secondaryMenu-container>div .secondaryMenu-container-list a.hot{
     color:#4d84ef;
 }
-.main .Banner .content .wrap .showList li:nth-child(13):hover a,
+.main .Banner .content .wrap .showList li.active:nth-child(13) a,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(13) .secondaryMenu-container>div .secondaryMenu-container-list a:hover,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(13) .secondaryMenu-container>div .secondaryMenu-container-list a.hot{
     color:#f7ab38;
 }
-.main .Banner .content .wrap .showList li:nth-child(14):hover a,
+.main .Banner .content .wrap .showList li.active:nth-child(14) a,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(14) .secondaryMenu-container>div .secondaryMenu-container-list a:hover,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(14) .secondaryMenu-container>div .secondaryMenu-container-list a.hot{
     color:#41c9b2;
 }
-.main .Banner .content .wrap .showList li:nth-child(15):hover a,
+.main .Banner .content .wrap .showList li.active:nth-child(15) a,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(15) .secondaryMenu-container>div .secondaryMenu-container-list a:hover,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(15) .secondaryMenu-container>div .secondaryMenu-container-list a.hot{
     color:#e24848;
 }
-.main .Banner .content .wrap .showList li:nth-child(16):hover a,
+.main .Banner .content .wrap .showList li.active:nth-child(16) a,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(16) .secondaryMenu-container>div .secondaryMenu-container-list a:hover,
 .main .Banner .content .wrap .secondaryMenu li:nth-child(16) .secondaryMenu-container>div .secondaryMenu-container-list a.hot{
     color:#49cbb5;
@@ -601,13 +601,13 @@
     position:absolute;
     top:0;
     left:200px;
-    z-index:5;
     width:852px;
     height:500px;
 }
 .main .Banner .content .wrap .secondaryMenu li{
     display:none;
     position:absolute;
+    z-index:5;
     top:0;
     left:0;
     width:100%;
@@ -634,7 +634,7 @@
 .main .Banner .content .wrap .secondaryMenu li .secondaryMenu-container>div .secondaryMenu-container-list{
     float:right;
     width:493px;
-    padding-bottom:5px;
+    padding-bottom:4px;
     border-bottom:1px dashed #eee;
 }
 .main .Banner .content .wrap .secondaryMenu li .secondaryMenu-container>div .secondaryMenu-container-list a{
@@ -696,11 +696,67 @@
     margin:60px auto;
 }
 
-
-
-
-
-
+/*******************************************
+    储存固定定位导航,侧边栏,搜索框等
+*******************************************/
+/***** 右侧边栏 *****/
+.wrap .slidebar{
+	position:fixed;
+	top:0;
+	right:0;
+	z-index:10;
+	width:35px;
+	height:100%;
+	background-color:#000;
+}
+.wrap .slidebar .container{
+	margin-top:101px;
+	width:100%;
+}
+.wrap .slidebar .container li{
+	margin-top:8px;
+	cursor:pointer;
+}
+.wrap .slidebar .container li.items{
+	position:relative;
+	width:100%;
+	height:36px;
+}
+.wrap .slidebar .container li.items:hover{
+	background-color:#ff0036;
+}
+.wrap .slidebar .container li.items .icon{
+	display:block;
+	width:100%;
+	height:100%;
+}
+.wrap .slidebar .container li.items .submenu{
+	display:none;
+	opacity:0;
+	position:absolute;
+	top:0;
+	left:-130px;
+	width:90px;
+	height:100%;
+	background-color:rgba(0,0,0,.85);
+	color:#fff;
+	text-align:center;
+	line-height:36px;
+	transition:left .5s,opacity .5s;
+}
+.wrap .slidebar .container li.items .submenu.show{
+	opacity:1;
+	left:-90px;
+}
+.wrap .slidebar .container li.items .submenu:after{
+	content:"";
+	position:absolute;
+	top:50%;
+	right:-12px;
+	margin-top:-6px;
+	border:6px solid transparent;
+	border-left-color:rgba(0,0,0,.85);
+}
 
 
 
