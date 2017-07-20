@@ -171,302 +171,69 @@
 			//热门品牌
 			(function(){
 				var $brand = $hotBrandWrap.find(".brand"),
-					$brandList = $brand.find("ul");
+					$brandList = $brand.find("ul"),
+					$length = hot_brand_data.length;
+				
+				//生成li,填入第一组数据
+				var $sublength = hot_brand_data[0].length;
+				for(var j = $sublength-1; j >= 0; j--){
+					var $li = $('<li class="brandLogo"><div class="brand-img"><img src="img/index/activity/hotBrand/Brand'+1+'/b'+(j+1)+'.png" width="100" height="50"></div><div class="brand-mask"><i class="iconfont icon-xiai1"></i><div class="content"><p>'+hot_brand_data[0][j].msg+'</p><a href='+hot_brand_data[0][j].href+' target="_blank">点击进入</a></div></div></li>');
+					if(j>17)
+						$li.addClass("noBorder");
+					$brandList.prepend($li);
+				};
 
-				var data = [
-					//第一组品牌
-					[
-						{
-							href : 'https://kireido.tmall.hk/shop/view_shop.htm?spm=875.7931836/B.2016073.1.10c849damF2Kso&user_number_id=2811185140&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=1&abbucket=_AB-M1315_B9&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '优惠券 ￥30',
-						},{
-							href : 'https://eveny.tmall.com/shop/view_shop.htm?user_number_id=644692396&abtest=_AB-LR65-PR65&pvid=146df02e-9804-4523-9f89-2d950baf81ef&pos=2&abbucket=_AB-M65_B5&brandId=99822674&acm=03014.1003.1.765824&scm=1007.13143.56636.100200300000000',
-							msg : '优惠券 ￥100',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.3.10c849damF2Kso&user_number_id=740820069&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=3&abbucket=_AB-M1315_B9&brandId=99735694&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '优惠券 ￥100',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.4.10c849damF2Kso&user_number_id=2647194591&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=4&abbucket=_AB-M1315_B9&brandId=996908171&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '关注人数 150',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.5.10c849damF2Kso&user_number_id=2536501149&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=5&abbucket=_AB-M1315_B9&brandId=995842573&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '优惠券 ￥50',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.6.10c849damF2Kso&user_number_id=2653527491&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=6&abbucket=_AB-M1315_B9&brandId=995656201&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '关注人数 196',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.7.10c849damF2Kso&user_number_id=679339632&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=7&abbucket=_AB-M1315_B9&brandId=99554580&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '优惠券 ￥50',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.8.10c849damF2Kso&user_number_id=726984974&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=8&abbucket=_AB-M1315_B9&brandId=9947804&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '优惠券 ￥50',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.9.10c849damF2Kso&user_number_id=1859057170&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=9&abbucket=_AB-M1315_B9&brandId=9944569&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '优惠券 ￥50',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.10.10c849damF2Kso&user_number_id=1770991118&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=10&abbucket=_AB-M1315_B9&brandId=99402442&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '优惠券 ￥10',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.11.10c849damF2Kso&user_number_id=1824757794&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=11&abbucket=_AB-M1315_B9&brandId=99390451&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '优惠券 ￥30',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.12.10c849damF2Kso&user_number_id=743407139&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=12&abbucket=_AB-M1315_B9&brandId=99181556&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '优惠券 ￥200',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.13.10c849damF2Kso&user_number_id=2743173652&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=13&abbucket=_AB-M1315_B9&brandId=991778521&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '优惠券 ￥300',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.14.10c849damF2Kso&user_number_id=2188699526&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=14&abbucket=_AB-M1315_B9&brandId=9914474&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '优惠券 ￥100',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.15.10c849damF2Kso&user_number_id=678621926&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=15&abbucket=_AB-M1315_B9&brandId=99017282&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '优惠券 ￥3',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.16.10c849damF2Kso&user_number_id=1715864217&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=16&abbucket=_AB-M1315_B9&brandId=9901114&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '优惠券 ￥100',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.17.10c849damF2Kso&user_number_id=2466315291&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=17&abbucket=_AB-M1315_B9&brandId=9901039&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '优惠券 ￥50',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.18.10c849damF2Kso&user_number_id=679331178&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=18&abbucket=_AB-M1315_B9&brandId=98942537&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '优惠券 ￥100',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.19.10c849damF2Kso&user_number_id=1728261286&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=19&abbucket=_AB-M1315_B9&brandId=98907984&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '关注人数 9679',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.20.10c849damF2Kso&user_number_id=677121412&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=20&abbucket=_AB-M1315_B9&brandId=98878698&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '优惠券 ￥100',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.21.10c849damF2Kso&user_number_id=2807713243&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=21&abbucket=_AB-M1315_B9&brandId=9886836&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '关注人数 1477',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.22.10c849damF2Kso&user_number_id=696415169&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=22&abbucket=_AB-M1315_B9&brandId=98850972&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '优惠券 ￥200',
-						},{
-							href : 'https://store.taobao.com/shop/view_shop.htm?spm=875.7931836/B.2016073.23.10c849damF2Kso&user_number_id=2878738660&abtest=_AB-LR1315-PR1315&pvid=6a6d0a25-659b-4675-b465-f8c16611e8ad&pos=23&abbucket=_AB-M1315_B9&brandId=9879840&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000',
-							msg : '优惠券 ￥500',
-						},	
-					],
-					//第二组品牌	
-					[
-						{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},
-					],
-					//第三组品牌	
-					[
-						{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},
-					],
-					//第四组品牌	
-					[
-						{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},{
-							href : '',
-							msg : '',
-						},
-					],
-				];
+				var $BrandImg = $brandList.find('li .brand-img'),
+					$BrandImgPic = $BrandImg.find("img");
+					$BrandContent = $brandList.find("li .brand-mask .content"),
+					$BrandMsgHref = $BrandContent.find("a");
+
+				//换一批
+				var $next = $brandList.find('.next'),
+					$index = 0;	//当前是第几批
+
+				var isClick = false;	//用于延时
+
+				$next.click(function(){
+					if(!isClick){
+						var $brandImg = $brandList.find(".brandLogo .brand-img"),
+							$length = $brandImg.length;
+						$index++;
+						$index = $index%4;
+						
+						for(var i = 0; i < $length; i++){
+							(function(i){
+								setTimeout(function(){
+									$brandImg.eq(i).animate({
+										"width" : 0,
+									},200);
+									setTimeout(function(){
+										$BrandImgPic.eq(i).prop("src", "img/index/activity/hotBrand/Brand"+($index+1)+"/b"+(i+1)+".png");
+										$BrandMsgHref.eq(i).prop("href", hot_brand_data[$index][i].href).
+										siblings("p").eq(i).html(hot_brand_data[$index][i].msg);
+										$brandImg.eq(i).animate({
+											"width" : 121,
+										},200);
+									},200);
+								},(i+1)*30);
+							})(i);
+						}
+						isClick = true;
+						setTimeout(function(){
+							isClick = false;
+						},890);
+					}
+						/*
+							0
+							1 6
+							2 7 12
+							3 8 13 18
+							4 9 14 19
+							5 10 15 20
+							11 16 21
+							17 22
+						*/
+				});
 			})();
 
 		})();
@@ -535,7 +302,7 @@
 
 			//backTop单独事件
 			var $backTop = $container.find(".backTop");
-			$(document).scroll(function(e){
+			$(document).scroll(function(){
 				if($(document).scrollTop()){
 					$backTop.removeClass("hide");
 				}else{
@@ -549,6 +316,38 @@
 				$(scrollElement).animate({
 					scrollTop : 0,
 				},300);			
+			});
+		})();
+
+		//顶部搜索框
+		(function(){
+			var $TopSearch = $wrap.find(".topSearch"),
+				$element = $TopSearch.find(".top-search-wrap .topSearch-wrap-search *");
+			
+			//搜索按钮点击事件
+			$element.eq(1).click(function(){
+				var value = $element.eq(0).val(),
+					reg = /^\s{1,}$/.test(value);	//正则匹配是否不符合规则
+
+				if(!reg&&value!==''){
+					window.open("https://list.tmall.com/search_product.htm?q="+value, "_blank");
+				}
+			});
+
+			//显示隐藏顶部导航
+			$(document).scroll(function(){
+				$(document).scrollTop()>=736?$TopSearch.css("top",0):$TopSearch.css("top",-50);
+			});
+		})();
+
+		//左侧导航
+		(function(){
+			var Sidenav = $wrap.find(".Sidenav");
+			//初始化隐藏
+			Sidenav.hide();	
+			$(document).scroll(function(){
+				//到达指定位置后显示导航
+				$(document).scrollTop()>=602?Sidenav.show(300):Sidenav.hide(300);
 			});
 		})();
 	})();

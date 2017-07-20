@@ -967,15 +967,19 @@
 	float:left;
 	width:121px;
 	height:108px;
+	background-color:#f5f5f5;
 }
 .main .wrap .activity .hotBrand-Wrap .brand ul li .brand-img{
 	position:relative;
-	width:100%;
-	height:100%;
+	width:121px;
+	height:107px;
+	margin:auto;
 	border-bottom:1px solid #f5f5f5;
+	background-color:#fff;
 }
 .main .wrap .activity .hotBrand-Wrap .brand ul li.noBorder .brand-img{
 	border:none;
+	height:108px;
 }
 .main .wrap .activity .hotBrand-Wrap .brand ul li .brand-img img{
 	position:absolute;
@@ -983,6 +987,7 @@
 	bottom:0;
 	left:0;
 	right:0;
+	width:85%;
 	margin:auto;
 }
 .main .wrap .activity .hotBrand-Wrap .brand ul li:hover .brand-mask{
@@ -1049,6 +1054,7 @@
 	-moz-transform:rotate(180deg);
 	-o-transform:rotate(180deg);
 }
+
 .main .wrap .activity .hotBrand-Wrap .brand ul li.next:hover p{
 	color:#fff;
 }
@@ -1058,14 +1064,100 @@
 	font-size:26px;
 	text-align:center;
 	transition:transform .5s;
-	-webkit-transition:transform .5s;
-	-moz-transition:transform .5s;
-	-o-transition:transform .5s;
+	-webkit-transition:-webkit-transform .5s;
+	-moz-transition:-moz-transform .5s;
+	-o-transition:-o-transform .5s;
 }
 .main .wrap .activity .hotBrand-Wrap .brand ul li.next p{
 	font-size:15px;
 	text-align:center;
 }
+	/***** 热门展示 *****/
+.main .wrap .activity .hotShow{
+	width:100%;
+	margin-top:30px;
+}
+.main .wrap .activity .hotShow ul li{
+	float:left;
+	width:238px;
+	height:477px;
+	margin-left:10px;
+	background-color:#fff;
+}
+.main .wrap .activity .hotShow ul li.noMar{
+	margin-left:0;
+}
+.main .wrap .activity .hotShow ul li .title{
+	height:36px;
+	background-color:red;
+	color:#fff;
+	font-size:18px;
+	text-align:center;
+	line-height:38px;
+	vertical-align:middle;
+}
+.main .wrap .activity .hotShow ul li .title i{
+	font-size:22px;
+	vertical-align:middle;
+}
+.main .wrap .activity .hotShow ul li .section{
+	display:block;
+	width:200px;
+	height:219px;
+	border-top:1px solid transparent;
+	border-bottom:1px solid #eee;
+	margin:auto;
+}
+.main .wrap .activity .hotShow ul li .section.borderNone{
+	border-bottom:none;
+}
+.main .wrap .activity .hotShow ul li .section .section_title{
+	color:#000;
+	margin-top:20px;
+	font-size:20px;
+	text-align:center;
+}
+.main .wrap .activity .hotShow ul li .section p{
+	margin:10px 0;
+	color:#888;
+	font-size:14px;
+	text-align:center;
+}
+.main .wrap .activity .hotShow ul li .section .bg{
+	width:140px;
+	height:140px;
+	margin:auto;
+	background-color:#f8f8f8;
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-o-border-radius:50%;
+}
+.main .wrap .activity .hotShow ul li .section .bg img{
+	transition:transform .3s;
+	-webkit-transition:-webkit-transform .3s;
+	-moz-transition:-moz-transform .3s;
+	-o-transition:-o-transform .3s;
+}
+.main .wrap .activity .hotShow ul li .section:hover .bg img{
+	transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+	-o-transform:scale(1.1);
+}
+		/* banner广告 */
+.main .wrap .activity .hotShow .hot-show-banner{
+	display:block;
+	width:100%;
+	height:90px;
+	margin-top:10px;
+	background:url("../img/index/activity/hotShow/banner.jpg") no-repeat -175px 0;
+}
+	
+
+
+
+
 
 
 /*******************************************
@@ -1181,6 +1273,152 @@
 .wrap .slidebar .container li.backTop.hide{
 	display:none;
 }
+/***** 顶部搜索框 *****/
+.wrap .topSearch{
+	position:fixed;
+	top:-50px;
+	left:0;
+	right:0;
+	z-index:5;
+	width:100%;
+	max-width:1920px;
+	height:50px;
+	margin:auto;
+	background-color:#e32c32;
+	opacity:0.94;
+	transition:top .5s;
+	-webkit-transition:top .8s;
+	-moz-transition:top .8s;
+	-o-transition:top .8s;
+}
+.wrap .topSearch .top-search-wrap{
+	width:1230px;
+	margin:auto;
+}
+.wrap .topSearch .top-search-wrap .topSearch-wrap-fontLogo{
+	float:left;
+	height:50px;
+	margin-right:120px;
+}
+.wrap .topSearch .top-search-wrap .topSearch-wrap-fontLogo i{
+	color:#fff;
+	font-size:18px;
+	line-height:55px;
+	vertical-align:middle;
+}
+.wrap .topSearch .top-search-wrap .topSearch-wrap-fontLogo i:nth-child(2){
+	font-size:24px;
+}
+.wrap .topSearch .top-search-wrap .topSearch-wrap-search{
+	float:left;
+	margin-top:10px;
+}
+.wrap .topSearch .top-search-wrap .topSearch-wrap-search input{
+	float:left;
+	width:650px;
+	height:30px;
+	text-indent:5px;
+	outline:none;
+	border:none;
+}
+.wrap .topSearch .top-search-wrap .topSearch-wrap-search div{
+	float:left;
+	width:90px;
+	height:30px;
+	background-color:red;
+	color:#fff;
+	text-align:center;
+	line-height:30px;
+	font-size:16px;
+	cursor:pointer;
+	user-select:none;
+	-moz-user-select:none;
+}
+/***** 左侧导航条 *****/
+.wrap .Sidenav{
+	position:fixed;
+	left:2px;
+	bottom:10%;
+	z-index:5;
+	width:38px;
+}
+.wrap .Sidenav ul{
+	width:100%;
+}
+.wrap .Sidenav ul li{
+	position:relative;
+	width:100%;
+	height:36px;
+	color:#fff;
+	margin-bottom:1px;
+	cursor:pointer;
+}
+.wrap .Sidenav ul li p{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:28px;
+	margin:auto;
+	text-align:center;
+}
+.wrap .Sidenav ul li.top{
+	background-color:red;
+}
+.wrap .Sidenav ul li.top p{
+	height:14px;
+}
+.wrap .Sidenav ul li.items{
+	background-color:#626262;
+}
+.wrap .Sidenav ul li.items p{
+	height:24px;
+}
+.wrap .Sidenav ul li.backTop{
+	border-top:1px solid transparent;
+	background-color:#acacac;
+}
+.wrap .Sidenav ul li.backTop i{
+	display:block;
+	margin-top:3px;
+	text-align:center;
+}
+.wrap .Sidenav ul li.backTop p{
+	height:1px;
+}
+.wrap .Sidenav ul li.item1:hover,
+.wrap .Sidenav ul li.item1.show{
+	background-color:#ea5f8d;
+}
+.wrap .Sidenav ul li.item2:hover,
+.wrap .Sidenav ul li.item2.show{
+	background-color:#0aa6e8;
+}
+.wrap .Sidenav ul li.item3:hover,
+.wrap .Sidenav ul li.item3.show{
+	background-color:#64c333;
+}
+.wrap .Sidenav ul li.item4:hover,
+.wrap .Sidenav ul li.item4.show{
+	background-color:#f15453;
+}
+.wrap .Sidenav ul li.item5:hover,
+.wrap .Sidenav ul li.item5.show{
+	background-color:#19c8a9;
+}
+.wrap .Sidenav ul li.item6:hover,
+.wrap .Sidenav ul li.item6.show{
+	background-color:#f7a945;
+}
+.wrap .Sidenav ul li.item7:hover,
+.wrap .Sidenav ul li.item7.show{
+	background-color:#000;
+}
+
+
+
+
 /*动画组*/
 @keyframes magnify{
 	0%{transform:scale(1);}
