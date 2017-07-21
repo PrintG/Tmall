@@ -223,19 +223,37 @@
 							isClick = false;
 						},890);
 					}
-						/*
-							0
-							1 6
-							2 7 12
-							3 8 13 18
-							4 9 14 19
-							5 10 15 20
-							11 16 21
-							17 22
-						*/
 				});
 			})();
+		})();
 
+		//主体商品展示部分
+		(function(){
+			var $mainGoodShow = $main.find(".main-goods-show"),  
+				$rollingTipContainer = $mainGoodShow.find(".section .section-show .section-show-aside a .aside-rolling-tip .aside-rolling-tip-container");
+
+			
+			//文字滚动
+			for(var i = 0; i < $rollingTipContainer.length; i ++){
+				(function(i){
+					var $last = $rollingTipContainer.eq(i).find("p").length-1;
+					var $index = 0;	//当前显示的文字
+					setInterval(function(){
+						$index ++;
+						if($index===$last){
+							setTimeout(function(){
+								$index = 0;
+								$rollingTipContainer.eq(i).animate({
+									top : -$index*30,
+								},0);
+							},300);
+						}
+						$rollingTipContainer.eq(i).animate({
+							top : -$index*30,
+						},300);
+					},3000);
+				})(i);
+			}
 		})();
     })();
 
@@ -342,12 +360,48 @@
 
 		//左侧导航
 		(function(){
-			var Sidenav = $wrap.find(".Sidenav");
+			var $Sidenav = $wrap.find(".Sidenav"),
+				$li = $Sidenav.find("ul li.items"),
+				$backTop = $Sidenav.find("ul li.backTop");
+
 			//初始化隐藏
-			Sidenav.hide();	
+			$Sidenav.hide();	
+			//页面滚动事件
 			$(document).scroll(function(){
 				//到达指定位置后显示导航
-				$(document).scrollTop()>=602?Sidenav.show(300):Sidenav.hide(300);
+				var scrollTop = $(document).scrollTop();
+				scrollTop>=602?$Sidenav.show(300):$Sidenav.hide(300);
+			
+				//高亮显示导航条的栏目
+
+				//用于储存该模块的scrollTop值
+				var data = [1600,2100,2700,3200,3800,4300,5000,12000],
+					dataLength = data.length;
+				
+				//循环判断
+				for(var i = 0; i < dataLength; i++){
+					scrollTop>=data[i]&&scrollTop<data[i+1]?$li.eq(i).addClass("show"):$li.eq(i).removeClass("show");
+				}
+			});
+
+			//items点击到达指定模块
+
+			var modleSite = [1945,2445,3045,3545,4145,4645,5245];	//储存每个items到达的位置
+			$li.click(function(){
+				//解决兼容
+				var scrollElement = document.documentElement.scrollTop?document.documentElement:document.body;
+				$(scrollElement).animate({
+					scrollTop : modleSite[$(this).index(".Sidenav ul .items")],
+				},500);
+
+			});
+			
+			//返回头部
+			$backTop.click(function(){
+				var scrollElement = document.documentElement.scrollTop?document.documentElement:document.body;
+				$(scrollElement).animate({
+					scrollTop : 0,
+				},500);
 			});
 		})();
 	})();
